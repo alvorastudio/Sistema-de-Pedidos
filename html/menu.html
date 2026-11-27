@@ -1,21 +1,57 @@
-<html>
-<meta charset=UTF-8>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasa Burguer - Cardápio</title>
     <link rel="stylesheet" href="../css/bar.css">
     <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
-    <h1> Cardápio </h1>
+    <h1>Cardápio</h1>
     <hr>
-    <div class=”filtros”>
-        <label for="pesquisar">Pesquisar: </label><input type=text name:”pesquisar”>
-        <label for="categoria">Categoria:</label> <select id="categoria" name="categoria required> <option value="todos" selected>Todos</option> 
-            <option value="entradas" selected>Entradas</option> 
-            <option value="hamburguers" selected>Hambúrguers</option> 
-            <option value="bebidas"  selected>Bebidas</option> 
-            <option value="sobremesas" selected>Sobremesas</option> 
-        </div>
-<script src="../js/bar.js"></script>
+    <div class="filtros">
+        <label for="pesquisar">Pesquisar:</label>
+        <input id="pesquisar" type="search" placeholder="Buscar produto">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+            <option value="todos" selected>Todos</option>
+            <option value="entradas">Entradas</option>
+            <option value="hamburgueres">Hambúrgueres</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="sobremesas">Sobremesas</option>
+        </select>
+    </div>
+
+    <div class="cardapio">
+        <article class="item" data-categoria="entradas">
+            <img src="../img/fries.jpg" alt="Batata frita">
+            <h2>Batata Frita</h2>
+            <p>Batata frita crocante e deliciosa.</p>
+            <span>R$ 12,00</span>
+        </article>
+        <article class="item" data-categoria="hamburgueres">
+            <img src="../img/burger.jpg" alt="Cheeseburger">
+            <h2>Cheeseburger</h2>
+            <p>Hambúrguer suculento com queijo derretido.</p>
+            <span>R$ 18,00</span>
+        </article>
+        <article class="item" data-categoria="bebidas">
+            <img src="../img/coca.jpg" alt="Coca-Cola">
+            <h2>Coca-Cola</h2>
+            <p>Refrigerante gelado para acompanhar sua refeição.</p>
+            <span>R$ 5,00</span>
+        </article>
+        <article class="item" data-categoria="sobremesas">
+            <img src="../img/ice.jpg" alt="Sorvete">
+            <h2>Sorvete</h2>
+            <p>Sorvete cremoso de diversos sabores.</p>
+            <span>R$ 8,00</span>
+        </article>
+    </div>
+    <p class="sem-resultados" role="status" hidden>Nenhum produto encontrado.</p>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/bar.js"></script>
 </body>
 </html>

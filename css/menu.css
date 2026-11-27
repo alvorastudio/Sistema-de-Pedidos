@@ -16,9 +16,108 @@ h1{
 }
 
 hr {
-  width: 80%;
-  max-width: 900px;
-  margin: 40px auto;
-  border: 0;
-  border-top: 2px solid #030815;
+    width: min(80%, 900px);
+    margin: 32px auto;
+    border: 0;
+    border-top: 2px solid #030815;
+}
+
+.filtros {
+    width: min(94%, 1600px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 28px;
+}
+
+.filtros label {
+    color: #030815;
+    font-weight: 700;
+}
+
+.filtros input,
+.filtros select {
+    min-height: 42px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #030815;
+    border-radius: 4px;
+    background: #fff;
+    color: #030815;
+    font: inherit;
+}
+
+.filtros input {
+    width: min(100%, 260px);
+}
+
+.cardapio {
+    width: min(94%, 1600px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 20px;
+}
+
+.item {
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 16px;
+    border-radius: 6px;
+    background: #030815;
+    color: #fff;
+}
+
+.item img {
+    width: 100%;
+    height: 48%;
+    object-fit: cover;
+    border-radius: 3px;
+    background: #252a35;
+}
+
+.item h2 {
+    margin: 12px 0 4px;
+    font-size: 20px;
+}
+
+.item p {
+    margin: 0 0 8px;
+    color: #d7d9de;
+}
+
+.item span {
+    margin-top: auto;
+    color: #f0b429;
+    font-weight: 700;
+}
+
+.sem-resultados {
+    color: #030815;
+    font-weight: 700;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 520px) {
+    h1 {
+        padding-top: 48px;
+        font-size: 56px;
+    }
+
+    .filtros {
+        justify-content: flex-start;
+    }
+
+    .filtros input {
+        flex: 1 1 100%;
+    }
 }
