@@ -1,0 +1,41 @@
+body{
+    background-color: #f8dea7cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    font-family: 'BBH Bogle', sans-serif;
+    font-size: 100px;
+}
+
+.imagem{
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.imagem img{
+    display: block;
+    width: 100%;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.botoes button{
+    border: none;
+    border-radius: 999px;
+    width: 220px;
+    height: 60px;
+    font-size: 18px;
+    cursor: p
+}
