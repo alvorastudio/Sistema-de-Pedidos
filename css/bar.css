@@ -1,0 +1,61 @@
+.site-bar {
+    width: 100%;
+    min-height: 72px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+    background: #030815;
+    color: #fff;
+}
+
+.site-bar__logo {
+    color: #fff;
+    font-family: 'BBH Bogle', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-bar__nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+    margin-left: 48px;
+}
+
+.site-bar__nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.site-bar__nav a:hover,
+.site-bar__nav a:focus-visible {
+    background: #f0b429;
+    color: #030815;
+}
+
+@media (max-width: 600px) {
+    .site-bar {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    .site-bar__nav {
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    .site-bar__nav a {
+        flex: 1;
+        text-align: center;
+    }
+}
