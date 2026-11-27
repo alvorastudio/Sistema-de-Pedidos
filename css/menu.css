@@ -8,9 +8,17 @@ body{
 }
 
 h1{
-    padding-top: 40px;
+    padding-top: 80px;
     text-align: center;
     color: #333;
     font-family: 'BBH Bogle', sans-serif;
     font-size: 80px;
+}
+
+hr {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  border: 0;
+  border-top: 2px solid #030815;
 }
